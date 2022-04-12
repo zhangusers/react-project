@@ -1,0 +1,91 @@
+.page-warp {
+    margin: 0 @margin-m;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-ac {
+    .flex();
+    align-items: center;
+}
+
+.flex-jsb {
+    .flex();
+    justify-content: space-between;
+}
+
+.flex-ac-jsb {
+    .flex-ac();
+    justify-content: space-between;
+}
+
+.flex-ac-je {
+    .flex-ac();
+    justify-content: flex-end;
+}
+
+.flex-inline {
+    display: inline-flex;
+}
+
+.flex-w {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex1 {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+}
+
+/** 超出省略 */
+.overhidden {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+//.omit-1{
+//    .overhidden-line(1)
+//}
+//.omit-2{
+//    .overhidden-line(2)
+//}
+//.omit-3{
+//    .overhidden-line(3)
+//}
+
+
+.text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+pre, .pre {
+    font-family: PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB,Microsoft YaHei, SimSun, sans-serif;
+    margin-bottom: 0;
+    white-space: pre-wrap; /*css-3*/
+	white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+	white-space: -pre-wrap; /*Opera4-6*/
+	white-space: -o-pre-wrap; /*Opera7*/
+    word-wrap: break-word; /*InternetExplorer5.5+*/
+    overflow-wrap: break-word; /*与word-wrap相同的作用，word-wrap被重命名为 overflow-wrap*/
+}
+
+.link{
+    color: @primary;
+    cursor: pointer;
+    &:hover{
+        color: @primary;
+        opacity: .85;
+    }
+}
+
